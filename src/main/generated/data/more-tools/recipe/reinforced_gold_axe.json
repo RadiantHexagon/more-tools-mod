@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "more-tools:reinforced_gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " II",
+    " SI",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more-tools:reinforced_gold_axe"
+  }
+}
