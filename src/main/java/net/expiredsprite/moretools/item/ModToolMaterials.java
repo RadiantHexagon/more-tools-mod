@@ -1,8 +1,8 @@
 package net.expiredsprite.moretools.item;
 
 import com.google.common.base.Suppliers;
-import net.expiredsprite.moretools.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
@@ -11,8 +11,12 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    REINFORCED_GOLD(BlockTags.INCORRECT_FOR_IRON_TOOL,
-            1024, 12F, 2.0F, 18, () -> Ingredient.ofItems(ModItems.REINFORCED_GOLD_INGOT));
+    BRONZE(BlockTags.INCORRECT_FOR_IRON_TOOL,
+            1024, 12F, 2.0F, 18, () -> Ingredient.ofItems(ModItems.BRONZE_INGOT)),
+
+    COPPER(BlockTags.INCORRECT_FOR_STONE_TOOL,
+            200, 6F, 3.0F, 16, () -> Ingredient.ofItems(Items.COPPER_INGOT));
+
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

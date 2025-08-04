@@ -1,6 +1,7 @@
-// 1.21	2025-08-01T12:21:07.946579674	More Tools/Tags for minecraft:item
-95f0e3617aa09cc83fb26df116654755699e10c6 data/minecraft/tags/item/swords.json
-bb87334de346f7a5e0e9ad2262a739b3ee602a84 data/minecraft/tags/item/shovels.json
-801b78c79f5faacb305b2130b31f7d748c066611 data/minecraft/tags/item/axes.json
-f33130d9e973ced66250e8c1bb1b8106e0ef3f83 data/minecraft/tags/item/pickaxes.json
-14e7e09ab53f4ebc75f142a129ddca16ce18eaec data/minecraft/tags/item/hoes.json
+// 1.21	2025-08-04T15:39:51.361160766	More Tools/Tags for minecraft:item
+7f31f0ed6f3499e8433f34f9942853670c5f15e8 data/minecraft/tags/item/swords.json
+ef42e0d203d28a326d7585a5de078289c3bb0540 data/minecraft/tags/item/shovels.json
+dcc09b4127b5a14260416f56237842c59e1daab7 data/minecraft/tags/item/axes.json
+f542506ebc352770c54d0802c98d92ca2f760c7a data/minecraft/tags/item/trimmable_armor.json
+6b475f54bf260ff0dd703a788984b06a25ee51c5 data/minecraft/tags/item/pickaxes.json
+e288ba9110b8fa609d2dc9f906e73d1e6608ffc9 data/minecraft/tags/item/hoes.json

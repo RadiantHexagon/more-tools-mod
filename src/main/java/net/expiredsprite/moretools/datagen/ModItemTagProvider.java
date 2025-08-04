@@ -17,15 +17,31 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.REINFORCED_GOLD_SWORD);
+                .add(ModItems.BRONZE_SWORD)
+                .add(ModItems.COPPER_SWORD);
+
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.REINFORCED_GOLD_PICKAXE);
+                .add(ModItems.BRONZE_PICKAXE)
+                .add(ModItems.COPPER_PICKAXE);
+
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.REINFORCED_GOLD_AXE);
+                .add(ModItems.BRONZE_AXE)
+                .add(ModItems.COPPER_AXE);
+
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.REINFORCED_GOLD_SHOVEL);
+                .add(ModItems.BRONZE_SHOVEL)
+                .add(ModItems.COPPER_SHOVEL);
+
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.REINFORCED_GOLD_HOE);
+                .add(ModItems.BRONZE_HOE)
+                .add(ModItems.COPPER_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.COPPER_HELMET)
+                .add(ModItems.COPPER_CHESTPLATE)
+                .add(ModItems.COPPER_LEGGINGS)
+                .add(ModItems.COPPER_BOOTS);
+
 
     }
 }

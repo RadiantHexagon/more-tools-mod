@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "more-tools:item/reinforced_gold_ingot"
-  }
-}

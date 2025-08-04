@@ -19,66 +19,154 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter recipeExporter) {
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_GOLD_INGOT)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRONZE_SWORD)
 
-                .pattern("NNN")
-                .pattern("NAN")
-                .pattern("NNN")
-                .input('N', Items.GOLD_NUGGET)
-                .input('A', Items.AMETHYST_SHARD)
-                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_GOLD_SWORD)
-
-                .pattern(" I ")
-                .pattern(" I ")
-                .pattern(" S ")
-                .input('I', ModItems.REINFORCED_GOLD_INGOT)
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .input('I', ModItems.BRONZE_INGOT)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.REINFORCED_GOLD_INGOT), conditionsFromItem(ModItems.REINFORCED_GOLD_INGOT))
+                .criterion(hasItem(ModItems.BRONZE_INGOT), conditionsFromItem(ModItems.BRONZE_INGOT))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_GOLD_PICKAXE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRONZE_PICKAXE)
 
                 .pattern("III")
                 .pattern(" S ")
                 .pattern(" S ")
-                .input('I', ModItems.REINFORCED_GOLD_INGOT)
+                .input('I', ModItems.BRONZE_INGOT)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.REINFORCED_GOLD_INGOT), conditionsFromItem(ModItems.REINFORCED_GOLD_INGOT))
+                .criterion(hasItem(ModItems.BRONZE_INGOT), conditionsFromItem(ModItems.BRONZE_INGOT))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_GOLD_AXE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRONZE_AXE)
 
-                .pattern(" II")
-                .pattern(" SI")
-                .pattern(" S ")
-                .input('I', ModItems.REINFORCED_GOLD_INGOT)
+                .pattern("II")
+                .pattern("SI")
+                .pattern("S ")
+                .input('I', ModItems.BRONZE_INGOT)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.REINFORCED_GOLD_INGOT), conditionsFromItem(ModItems.REINFORCED_GOLD_INGOT))
+                .criterion(hasItem(ModItems.BRONZE_INGOT), conditionsFromItem(ModItems.BRONZE_INGOT))
                 .offerTo(recipeExporter);
 
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_GOLD_SHOVEL)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRONZE_SHOVEL)
 
-                .pattern(" I ")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('I', ModItems.REINFORCED_GOLD_INGOT)
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .input('I', ModItems.BRONZE_INGOT)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.REINFORCED_GOLD_INGOT), conditionsFromItem(ModItems.REINFORCED_GOLD_INGOT))
+                .criterion(hasItem(ModItems.BRONZE_INGOT), conditionsFromItem(ModItems.BRONZE_INGOT))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_GOLD_HOE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRONZE_HOE)
 
-                .pattern("II ")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('I', ModItems.REINFORCED_GOLD_INGOT)
+                .pattern("II")
+                .pattern(" S")
+                .pattern(" S")
+                .input('I', ModItems.BRONZE_INGOT)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.REINFORCED_GOLD_INGOT), conditionsFromItem(ModItems.REINFORCED_GOLD_INGOT))
+                .criterion(hasItem(ModItems.BRONZE_INGOT), conditionsFromItem(ModItems.BRONZE_INGOT))
                 .offerTo(recipeExporter);
+
+        // Copper Stuff :D
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.COPPER_INGOT)
+
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .input('N', ModItems.COPPER_NUGGET)
+                .criterion(hasItem(ModItems.COPPER_NUGGET), conditionsFromItem(ModItems.COPPER_NUGGET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_SWORD)
+
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .input('I', Items.COPPER_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_PICKAXE)
+
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', Items.COPPER_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_AXE)
+
+                .pattern("II")
+                .pattern("SI")
+                .pattern("S ")
+                .input('I', Items.COPPER_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_SHOVEL)
+
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .input('I', Items.COPPER_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_HOE)
+
+                .pattern("II")
+                .pattern("S ")
+                .pattern("S ")
+                .input('I', Items.COPPER_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_HELMET)
+
+                .pattern("III")
+                .pattern("I I")
+                .pattern("   ")
+                .input('I', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_CHESTPLATE)
+
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .input('I', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_LEGGINGS)
+
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_BOOTS)
+
+                .pattern("   ")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
 
 
     }

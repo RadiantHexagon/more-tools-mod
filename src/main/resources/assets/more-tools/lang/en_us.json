@@ -1,9 +1,21 @@
 {
-  "item.more-tools.reinforced_gold_ingot": "Reinforced Gold Ingot",
-  "item.more-tools.reinforced_gold_sword": "Reinforced Gold Sword",
-  "item.more-tools.reinforced_gold_pickaxe": "Reinforced Gold Pickaxe",
-  "item.more-tools.reinforced_gold_axe": "Reinforced Gold Axe",
-  "item.more-tools.reinforced_gold_shovel": "Reinforced Gold Shovel",
-  "item.more-tools.reinforced_gold_hoe": "Reinforced Gold Hoe"
+  "item.more-tools.bronze_ingot": "Bronze Ingot",
+  "item.more-tools.bronze_sword": "Bronze Sword",
+  "item.more-tools.bronze_pickaxe": "Bronze Pickaxe",
+  "item.more-tools.bronze_axe": "Bronze Axe",
+  "item.more-tools.bronze_shovel": "Bronze Shovel",
+  "item.more-tools.bronze_hoe": "Bronze Hoe",
+
+  "item.more-tools.copper_nugget": "Copper Nugget",
+  "item.more-tools.copper_sword": "Copper Sword",
+  "item.more-tools.copper_pickaxe": "Copper Pickaxe",
+  "item.more-tools.copper_axe": "Copper Axe",
+  "item.more-tools.copper_shovel": "Copper Shovel",
+  "item.more-tools.copper_hoe": "Copper Hoe",
+
+  "item.more-tools.copper_helmet": "Copper Helmet",
+  "item.more-tools.copper_chestplate": "Copper Chestplate",
+  "item.more-tools.copper_leggings": "Copper Leggings",
+  "item.more-tools.copper_boots": "Copper Boots"
 
 }
